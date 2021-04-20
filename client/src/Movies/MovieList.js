@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useHistory} from 'react-router-dom'
+import { useHistory} from 'react-router-dom'
 
 export default function MovieList(props) {
   return (
@@ -20,7 +20,6 @@ function MovieDetails(props) {
   }
 
   return (
-    // <Link to={`movies/${id}`}>
     <div className="movie-card" onClick={routeToMovieCard}>
       <h2>{title}</h2>
       <div className="movie-director">
@@ -30,6 +29,6 @@ function MovieDetails(props) {
         Metascore: <strong>{metascore}</strong>
       </div>
     </div>
-    //  </Link>
+    
   );
 }
